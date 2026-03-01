@@ -1,5 +1,9 @@
 # 🔬 Food Science AI Workshop
 
+<!-- BADGES:START -->
+[![presentation](https://img.shields.io/badge/-presentation-9c27b0?style=flat-square)](https://github.com/topics/presentation) [![ai-ethics](https://img.shields.io/badge/-ai--ethics-blue?style=flat-square)](https://github.com/topics/ai-ethics) [![artificial-intelligence](https://img.shields.io/badge/-artificial--intelligence-blue?style=flat-square)](https://github.com/topics/artificial-intelligence) [![edtech](https://img.shields.io/badge/-edtech-4caf50?style=flat-square)](https://github.com/topics/edtech) [![educational-materials](https://img.shields.io/badge/-educational--materials-blue?style=flat-square)](https://github.com/topics/educational-materials) [![food-science](https://img.shields.io/badge/-food--science-blue?style=flat-square)](https://github.com/topics/food-science) [![interactive-learning](https://img.shields.io/badge/-interactive--learning-blue?style=flat-square)](https://github.com/topics/interactive-learning) [![machine-learning](https://img.shields.io/badge/-machine--learning-ff6f00?style=flat-square)](https://github.com/topics/machine-learning) [![prompt-engineering](https://img.shields.io/badge/-prompt--engineering-blue?style=flat-square)](https://github.com/topics/prompt-engineering) [![research-methodology](https://img.shields.io/badge/-research--methodology-blue?style=flat-square)](https://github.com/topics/research-methodology)
+<!-- BADGES:END -->
+
 **Interactive training materials for food science students learning AI-assisted research workflows**
 
 ![Workshop Banner](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-brightgreen) ![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue) ![Status](https://img.shields.io/badge/Status-Active-success)
