@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentations - Food Science AI Workshop</title>
-    <meta name="description" content="Interactive presentations covering AI fundamentals and hands-on practice for food science research.">
-    
+    <meta name="description" content="Workshop presentation: Conversation, Not Delegation - Using AI to Amplify Your Food Science Research.">
+
     <style>
         * {
             margin: 0;
@@ -67,18 +67,13 @@
             transform: translateY(-2px);
         }
 
-        .presentations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-
         .presentation-card {
             background: rgba(30, 41, 59, 0.7);
             border: 1px solid #334155;
             border-radius: 16px;
-            padding: 30px;
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 700px;
             transition: all 0.3s ease;
         }
 
@@ -89,15 +84,21 @@
         }
 
         .presentation-title {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             font-weight: 600;
             color: #f1f5f9;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+        }
+
+        .presentation-subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 20px;
         }
 
         .presentation-description {
             color: #94a3b8;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             line-height: 1.6;
         }
 
@@ -105,7 +106,7 @@
             background: rgba(59, 130, 246, 0.1);
             border-radius: 8px;
             padding: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .presentation-topics h4 {
@@ -127,9 +128,25 @@
         }
 
         .presentation-topics li:before {
-            content: "→ ";
+            content: "\2192 ";
             color: #60a5fa;
             font-weight: bold;
+        }
+
+        .presentation-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        .meta-item {
+            background: rgba(59, 130, 246, 0.1);
+            padding: 4px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
         }
 
         .presentation-links {
@@ -140,36 +157,19 @@
 
         .presentation-link {
             display: inline-block;
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            background: linear-gradient(135deg, #10b981, #059669);
             color: white;
-            padding: 10px 16px;
-            border-radius: 6px;
+            padding: 12px 24px;
+            border-radius: 8px;
             text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 16px;
             transition: all 0.3s ease;
         }
 
         .presentation-link:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
-        }
-
-        .presentation-link.primary {
-            background: linear-gradient(135deg, #10b981, #059669);
-            font-size: 16px;
-            padding: 12px 20px;
-        }
-
-        .presentation-link.secondary {
-            background: rgba(59, 130, 246, 0.1);
-            color: #3b82f6;
-            border: 1px solid rgba(59, 130, 246, 0.2);
-        }
-
-        .presentation-link.secondary:hover {
-            background: rgba(59, 130, 246, 0.2);
-            color: #60a5fa;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
         }
 
         .info-box {
@@ -177,7 +177,8 @@
             border: 1px solid #10b981;
             border-radius: 12px;
             padding: 20px;
-            margin: 40px 0;
+            margin: 40px auto;
+            max-width: 700px;
             text-align: center;
         }
 
@@ -195,10 +196,6 @@
             h1 {
                 font-size: 2rem;
             }
-            
-            .presentations-grid {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
@@ -206,81 +203,56 @@
     <header class="header">
         <div class="container">
             <a href="../" class="back-link">
-                ← Back to Workshop
+                &larr; Back to Workshop
             </a>
-            
-            <h1>🎭 Workshop Presentations</h1>
+
+            <h1>Workshop Presentation</h1>
             <p class="subtitle">
-                Interactive slide presentations covering AI fundamentals and hands-on research workflows
+                Conversation, Not Delegation --- Using AI to Amplify Your Food Science Research
             </p>
         </div>
     </header>
 
     <main class="container">
-        <div class="presentations-grid">
-            <div class="presentation-card">
-                <h2 class="presentation-title">🎓 Session 1: AI Fundamentals</h2>
-                <p class="presentation-description">
-                    Master the foundations of AI-assisted research including LLM capabilities, limitations, and the critical importance of verification in academic work.
-                </p>
-                
-                <div class="presentation-topics">
-                    <h4>Key Topics</h4>
-                    <ul>
-                        <li>LLM capabilities and limitations</li>
-                        <li>The hallucination problem</li>
-                        <li>CRAFT prompting framework</li>
-                        <li>Research integrity and ethics</li>
-                        <li>Tool selection and evaluation</li>
-                    </ul>
-                </div>
-                
-                <div class="presentation-links">
-                    <a href="./llm-research-presentation-1-md.html" class="presentation-link primary">View Interactive Slides</a>
-                    <a href="./llm-research-presentation-1-md.pdf" class="presentation-link secondary">Download PDF</a>
-                    <a href="../audio-guides/llm-research-presentation-1-md.m4a" class="presentation-link secondary">Audio Guide</a>
-                </div>
+        <div class="presentation-card">
+            <h2 class="presentation-title">Conversation, Not Delegation</h2>
+            <p class="presentation-subtitle">Using AI to Amplify Your Food Science Research</p>
+            <p class="presentation-description">
+                A 2-hour hands-on workshop for postgraduate researchers. Learn to think with AI, not through it. Covers conversational techniques, the RTCF and VET frameworks, data analysis with Gemini, and literature synthesis with NotebookLM.
+            </p>
+
+            <div class="presentation-meta">
+                <span class="meta-item">Dr. Michael Borck</span>
+                <span class="meta-item">7 March 2026</span>
+                <span class="meta-item">2 hours</span>
+                <span class="meta-item">Gemini + NotebookLM</span>
             </div>
 
-            <div class="presentation-card">
-                <h2 class="presentation-title">🛠️ Session 2: Hands-on Practice</h2>
-                <p class="presentation-description">
-                    Apply the 10-step research methodology with real datasets, practice advanced prompting techniques, and build your own AI research workflow.
-                </p>
-                
-                <div class="presentation-topics">
-                    <h4>Key Topics</h4>
-                    <ul>
-                        <li>10-step research methodology</li>
-                        <li>Advanced CRAFT techniques</li>
-                        <li>Dataset analysis walkthrough</li>
-                        <li>Tool integration strategies</li>
-                        <li>Publication and collaboration</li>
-                    </ul>
-                </div>
-                
-                <div class="presentation-links">
-                    <a href="./llm-research-presentation-2-md.html" class="presentation-link primary">View Interactive Slides</a>
-                    <a href="./llm-research-presentation-2-md.pdf" class="presentation-link secondary">Download PDF</a>
-                    <a href="../audio-guides/llm-research-presentation-2-md.m4a" class="presentation-link secondary">Audio Guide</a>
-                </div>
+            <div class="presentation-topics">
+                <h4>Topics Covered</h4>
+                <ul>
+                    <li>Conversation, Not Delegation mindset</li>
+                    <li>RTCF prompting framework (Role, Task, Context, Format)</li>
+                    <li>Reverse prompting, multi-perspective analysis, devil's advocate</li>
+                    <li>VET framework (Verify, Explain, Test)</li>
+                    <li>Hands-on data analysis with Gemini</li>
+                    <li>Literature synthesis with NotebookLM</li>
+                </ul>
+            </div>
+
+            <div class="presentation-links">
+                <a href="./workshop-2026.html" class="presentation-link">View Slides</a>
             </div>
         </div>
 
         <div class="info-box">
-            <h3>💡 Learning Path Recommendation</h3>
+            <h3>Need the Datasets?</h3>
             <p>
-                Start with Session 1 to build your foundation, then move to Session 2 for hands-on practice. Use the interactive tools alongside each session for optimal learning.
+                Download the fermentation, shelf-life, sensory panel, or process optimisation datasets for the hands-on data analysis activity.
             </p>
-        </div>
-
-        <div style="text-align: center; margin: 40px 0; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-            <a href="../interactive-tools/ai_readiness_quiz.html" class="presentation-link" style="font-size: 16px; padding: 12px 24px;">
-                🎯 Take Readiness Quiz
-            </a>
-            <a href="../interactive-tools/prompt_builder_tool.html" class="presentation-link secondary" style="font-size: 16px; padding: 12px 24px;">
-                🛠️ Try Prompt Builder
-            </a>
+            <div style="margin-top: 15px;">
+                <a href="../datasets/" class="presentation-link" style="font-size: 14px; padding: 10px 20px; background: linear-gradient(135deg, #3b82f6, #1d4ed8);">Browse Datasets</a>
+            </div>
         </div>
     </main>
 </body>

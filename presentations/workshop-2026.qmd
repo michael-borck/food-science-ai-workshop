@@ -1,0 +1,558 @@
+---
+title: "Conversation, Not Delegation"
+subtitle: "Using AI to Amplify Your Food Science Research"
+author: "Dr. Michael Borck"
+date: "7 March 2026"
+format:
+  revealjs:
+    theme: dark
+    slide-number: true
+    embed-resources: true
+    hash-type: number
+    transition: fade
+    width: 1280
+    height: 720
+    margin: 0.1
+    center: true
+---
+
+# Part 1: The Right Mindset {background-color="#1a1a2e"}
+
+## The $440,000 Mistake {.center}
+
+::: {.r-fit-text}
+**$440,000**
+:::
+
+That's what the Australian government paid Deloitte for a welfare review report.
+
+::: {.fragment}
+The report contained **fabricated citations**, non-existent studies, and a false quote attributed to a federal court judge.
+:::
+
+::: {.fragment}
+Deloitte used **GPT-4o** in the drafting process.
+:::
+
+::: {.notes}
+Deloitte's report for the Department of Employment and Workplace Relations contained numerous fabricated citations - non-existent studies attributed to University of Sydney and Lund University. Errors were flagged by Dr. Christopher Rudge, a Sydney University academic.
+:::
+
+## What Went Wrong?
+
+AI is **confident even when wrong**.
+
+::: {.incremental}
+- Non-existent studies attributed to real universities
+- False quote attributed to a federal court judge
+- Hallucination rates in LLMs can reach **up to 45%** in specific contexts
+- A $1.6M Canadian healthcare report had the same problem
+:::
+
+::: {.fragment .highlight-red}
+**The issue wasn't using AI. It was trusting AI without verifying.**
+:::
+
+## The Real Problem
+
+:::: {.columns}
+::: {.column width="50%"}
+### Delegation Mindset
+- "AI, write this for me"
+- "AI, do my analysis"
+- "AI, give me the answer"
+- Results: dependency, shallow understanding, **risk**
+:::
+
+::: {.column width="50%"}
+### Conversation Mindset
+- "AI, help me think through this"
+- "AI, what patterns do you see?"
+- "AI, challenge my hypothesis"
+- Results: empowerment, deeper insight, **growth**
+:::
+::::
+
+## Conversation, Not Delegation {.center}
+
+::: {.r-fit-text}
+**Think WITH AI, not THROUGH AI**
+:::
+
+## The Conversation Loop
+
+```{mermaid}
+%%| fig-width: 10
+flowchart LR
+    A[Brainstorm] --> B[Ideate]
+    B --> C[Iterate]
+    C --> D[Amplify]
+    D --> A
+```
+
+::: {.fragment}
+Your **expertise** + AI's **breadth** = **amplified thinking**
+:::
+
+::: {.fragment}
+The bottleneck is your thinking, not the model.
+:::
+
+## Why Frontier Models Aren't Necessary
+
+You don't need a $200/month subscription.
+
+::: {.incremental}
+- **Gemini** (free): 2M token context, multimodal, Deep Research
+- **NotebookLM** (free): grounded in YOUR sources, no hallucination
+- Both handle everything we'll do today
+- The **bottleneck is your thinking**, not the model
+:::
+
+::: {.fragment}
+Free tools + good thinking > expensive tools + lazy thinking
+:::
+
+## Quick Tool Check {.center}
+
+Before we continue:
+
+::: {.incremental}
+1. Open [gemini.google.com](https://gemini.google.com) in your browser
+2. Sign in with your Google account
+3. You should see the Gemini chat interface
+4. Open [notebooklm.google.com](https://notebooklm.google.com) in another tab
+:::
+
+::: {.fragment}
+Everyone ready? Let's go.
+:::
+
+# Part 2: Conversation Techniques {background-color="#1a1a2e"}
+
+## The RTCF Framework
+
+A simple structure for your AI conversations:
+
+:::: {.columns}
+::: {.column width="25%"}
+### **R**ole
+Who should AI be?
+
+*"You are an experienced food scientist..."*
+:::
+::: {.column width="25%"}
+### **T**ask
+What should it do?
+
+*"Analyse this fermentation data..."*
+:::
+::: {.column width="25%"}
+### **C**ontext
+What background?
+
+*"Oat milk study, 4 treatments, 48 hours..."*
+:::
+::: {.column width="25%"}
+### **F**ormat
+How should output look?
+
+*"Table with statistical summary..."*
+:::
+::::
+
+## RTCF: Before & After
+
+::: {.callout-warning}
+## Weak Prompt
+"What are some food science research ideas?"
+:::
+
+::: {.fragment}
+::: {.callout-tip}
+## RTCF Prompt
+"You are an experienced food science researcher specialising in plant-based alternatives **(R)**. Generate 5 innovative research hypotheses for Masters-level studies on oat milk fermentation **(T)**. These are for a postgraduate research project in Western Australia **(C)**. Present each with a title, keywords, and 150-word abstract **(F)**."
+:::
+:::
+
+::: {.fragment}
+You don't need all 4 elements every time --- use what's relevant.
+:::
+
+## Reverse Prompting {.center}
+
+::: {.r-fit-text}
+Let AI **interview YOU**
+:::
+
+Instead of asking for solutions, let AI understand your context first.
+
+## Reverse Prompting: Demo
+
+::: {.callout-note}
+## Try This in Gemini
+"I'm researching food preservation techniques for extending shelf life of plant-based dairy products.
+
+Before giving me any advice, **interview me first**. Ask me questions one at a time to understand:
+
+- My specific product and preservation goals
+- My available equipment and facilities
+- My research timeline and constraints
+- My current knowledge gaps
+
+After you understand my situation, then give me tailored recommendations. Start with your first question."
+:::
+
+## Why Reverse Prompting Works
+
+::: {.incremental}
+- AI builds **your specific context** before responding
+- Surfaces **assumptions you didn't know you had**
+- Generates **tailored ideas**, not generic ones
+- Teaches you to think about **what you don't know**
+- Mirrors how **supervisors actually help** --- by asking good questions
+:::
+
+::: {.fragment}
+**Activity:** Try reverse prompting with your own research topic in Gemini (5 min)
+:::
+
+## Multi-Perspective Analysis {.center}
+
+::: {.r-fit-text}
+The **Board of Directors** Technique
+:::
+
+Get multiple expert viewpoints in one conversation.
+
+## Multi-Perspective Analysis: Demo
+
+::: {.callout-note}
+## Try This in Gemini
+"I'm investigating whether ultrasonic treatment improves protein extraction from lupin seeds for plant-based food applications.
+
+Act as my advisory panel and analyse this from multiple perspectives:
+
+1. **As a food scientist:** Technical feasibility and expected outcomes?
+2. **As a statistician:** What experimental design would be most rigorous?
+3. **As an industry partner:** Commercial viability and scalability?
+4. **As an ethics reviewer:** Any concerns with this research?
+
+For each perspective, give me 3-4 key points."
+:::
+
+## Why Multi-Perspective Works
+
+- Catches **blind spots** you'd miss thinking alone
+- Identifies **conflicts** between different priorities
+- Generates ideas from **outside your discipline**
+- Mimics the feedback you'd get from a **diverse committee**
+
+::: {.fragment}
+**The key:** Compare where experts agree and where they conflict.
+:::
+
+## Devil's Advocate {.center}
+
+::: {.r-fit-text}
+**Stress-test** your hypotheses
+:::
+
+We naturally seek evidence that confirms our ideas.
+
+Force AI to argue against your position.
+
+## Devil's Advocate: Demo
+
+::: {.callout-note}
+## Try This in Gemini
+"I believe that fermenting oat milk with a combination of Lactobacillus rhamnosus and Streptococcus thermophilus at 37C for 24 hours will produce a product with superior probiotic viability and sensory properties compared to single-strain fermentation.
+
+**Play devil's advocate.** Give me the strongest possible arguments against this hypothesis. Be harsh but fair. I want to know:
+
+1. Why might this experimental design fail?
+2. What am I probably not thinking about?
+3. What alternative explanations could undermine my results?
+4. What would a sceptical reviewer say?
+
+Don't hold back --- I need to hear the hard truths."
+:::
+
+## The Magic Phrases
+
+These phrases unlock better critical feedback:
+
+::: {.incremental}
+- **"Be harsh but fair"** --- permission to be direct
+- **"Don't hold back"** --- removes AI's tendency to be polite
+- **"I need to hear the hard truths"** --- signals you want real critique
+- **"What am I probably not thinking about?"** --- surfaces blind spots
+- **"What would a sceptical reviewer say?"** --- academic framing
+:::
+
+::: {.fragment}
+**Activity:** Devil's advocate your own research hypothesis (5 min)
+:::
+
+# Part 3: The VET Framework {background-color="#1a1a2e"}
+
+## Push Back on AI {.center}
+
+AI should **challenge your thinking**, not replace it.
+
+::: {.fragment}
+The moment you stop questioning AI's output is the moment you become Deloitte.
+:::
+
+## VET Your AI
+
+A simple 3-step push-back framework:
+
+:::: {.columns}
+::: {.column width="33%"}
+### **V**erify
+Can I find this independently?
+
+- Check sources
+- Cross-reference claims
+- Look up citations
+:::
+::: {.column width="33%"}
+### **E**xplain
+Can I explain this in my own words?
+
+- If not, you don't understand it
+- Rewrite in your language
+- Teach it to someone
+:::
+::: {.column width="33%"}
+### **T**est
+Does this hold up under scrutiny?
+
+- Devil's advocate it
+- Check edge cases
+- Ask "what if?"
+:::
+::::
+
+::: {.fragment}
+**VET** your AI --- like vetting a source.
+:::
+
+## VET in Practice
+
+| AI says... | V: Verify | E: Explain | T: Test |
+|---|---|---|---|
+| "Studies show pH drops faster in co-culture" | Find the actual studies | Can I explain the mechanism? | What about different substrates? |
+| "Optimal temperature is 37C" | Check the literature | Why 37C specifically? | What happens at 35C or 40C? |
+| "This method has 95% recovery rate" | Where's that number from? | What does 95% mean here? | Under what conditions? |
+
+::: {.fragment}
+If you can't VET it, **don't use it**.
+:::
+
+# BREAK {background-color="#2d1b69"}
+
+## 10 Minutes {.center}
+
+::: {.r-fit-text}
+Stretch, grab a coffee, check your messages.
+:::
+
+Back in 10 minutes for hands-on data analysis.
+
+# Part 4: Data Analysis with Gemini {background-color="#1a1a2e"}
+
+## The Power of Conversational Analysis {.center}
+
+A single prompt gives you a single answer.
+
+A **conversation** gives you **understanding**.
+
+## Our Dataset: Fermentation Study
+
+Oat milk fermentation with probiotics over 48 hours.
+
+| Variable | Description |
+|---|---|
+| Time_hours | 0, 6, 12, 24, 48 hours |
+| Treatment | Control, Single strain, Co-culture, Optimised |
+| pH | Acidity measurement |
+| Titratable_Acidity | Acid content (%) |
+| Viable_Count | Probiotic count (log CFU/mL) |
+| Viscosity | Texture measurement (mPa.s) |
+
+::: {.fragment}
+Download: [fermentation-dataset.csv](../datasets/fermentation-dataset.csv)
+:::
+
+## Step 1: Upload & Explore
+
+::: {.callout-note}
+## In Gemini
+1. Click the **+** button to attach a file
+2. Upload `fermentation-dataset.csv`
+3. Start the conversation:
+
+"I've uploaded a fermentation dataset from an oat milk study with 4 treatments measured over 48 hours. **What patterns do you see?** Give me an initial overview of the data."
+:::
+
+::: {.fragment}
+Notice: we're asking **"what do you see?"** not **"analyse this data"**.
+:::
+
+## Step 2: Dig Deeper
+
+Follow up with targeted questions:
+
+::: {.incremental}
+- "Why might pH drop faster in treatment 3 compared to the others?"
+- "Are there any unexpected trends in the viable count data?"
+- "Which treatment shows the most consistent viscosity change?"
+- "Create a visualisation comparing pH trends across treatments"
+:::
+
+::: {.fragment}
+Each question builds on what came before --- this is **conversational analysis**.
+:::
+
+## Step 3: Generate Outputs
+
+Ask Gemini to help you create deliverables:
+
+::: {.incremental}
+- **"Summarise the key findings in 3 paragraphs suitable for a results section"**
+- **"Create a table of descriptive statistics for each treatment"**
+- **"What statistical tests would be appropriate for this data?"**
+- **"Draft a figure caption for the pH trend visualisation"**
+:::
+
+::: {.fragment}
+Export to: Google Sheets (data), Google Docs (write-up), Google Slides (figures)
+:::
+
+## Activity: Analyse Your Data (15 min) {.center}
+
+::: {.callout-tip}
+## Your Turn
+1. Upload the fermentation dataset (or another from our [datasets page](../datasets/))
+2. Have a **conversation** with Gemini about the data
+3. Ask at least 5 follow-up questions
+4. Generate one output (summary, table, or visualisation)
+5. **VET** at least one claim Gemini makes
+:::
+
+Remember: the conversation guided the analysis, not a single prompt.
+
+# Part 5: NotebookLM for Literature & Synthesis {background-color="#1a1a2e"}
+
+## What is NotebookLM? {.center}
+
+AI that is **constrained to your curated sources**.
+
+No hallucination. No made-up citations. Just your papers.
+
+## NotebookLM: Key Features
+
+::: {.incremental}
+- Upload PDFs, Google Docs, websites, YouTube videos
+- AI answers are **grounded in YOUR sources only**
+- Generates **audio overviews** (podcast-style summaries)
+- Creates study guides, FAQs, timelines
+- **Free** with a Google account
+:::
+
+::: {.fragment}
+Think of it as: AI that has read your papers and **only** your papers.
+:::
+
+## Demo: Literature Synthesis
+
+::: {.callout-note}
+## In NotebookLM
+1. Go to [notebooklm.google.com](https://notebooklm.google.com)
+2. Create a new notebook
+3. Upload 3-5 papers on your research topic
+4. Try these:
+   - "What are the main findings across these papers?"
+   - "Where do the authors disagree?"
+   - "What gaps exist in this literature?"
+   - Click **"Generate Audio Overview"** for a podcast summary
+:::
+
+## Why NotebookLM is Powerful
+
+:::: {.columns}
+::: {.column width="50%"}
+### Regular AI (Gemini, ChatGPT)
+- Trained on internet data
+- Can hallucinate citations
+- May mix up sources
+- General knowledge
+:::
+
+::: {.column width="50%"}
+### NotebookLM
+- Grounded in YOUR uploads
+- Citations trace to your docs
+- No external information
+- Focused knowledge
+:::
+::::
+
+::: {.fragment}
+Use **Gemini** for broad exploration. Use **NotebookLM** for deep, source-grounded work.
+:::
+
+## NotebookLM for Your Research
+
+Ideas for postgraduate researchers:
+
+::: {.incremental}
+- Upload your **literature review papers** --- ask for synthesis across themes
+- Upload your **supervisor's feedback** --- ask for action items
+- Upload **methods papers** --- ask for protocol comparisons
+- Upload your **own drafts** --- ask for gaps and improvements
+- Generate **audio overviews** to review on your commute
+:::
+
+# Part 6: Wrap-Up {background-color="#1a1a2e"}
+
+## Key Takeaways {.center}
+
+::: {.incremental}
+1. **Conversation > Delegation** --- think with AI, not through it
+2. **RTCF** --- Role, Task, Context, Format for better prompts
+3. **VET your AI** --- Verify, Explain, Test everything
+4. **Gemini + NotebookLM** = powerful free toolkit
+5. **Your expertise is the secret ingredient**
+:::
+
+## Your AI Conversation Toolkit
+
+| Technique | When to Use | Key Phrase |
+|---|---|---|
+| RTCF Framework | Starting any AI conversation | "You are... I need you to..." |
+| Reverse Prompting | Exploring a new problem | "Interview me first" |
+| Multi-Perspective | Evaluating ideas or plans | "Act as my advisory panel" |
+| Devil's Advocate | Testing hypotheses | "Be harsh but fair" |
+| VET Framework | Before using ANY AI output | "Can I verify, explain, and test this?" |
+
+## Resources
+
+- **This workshop:** [michael-borck.github.io/food-science-ai-workshop](https://michael-borck.github.io/food-science-ai-workshop)
+- **Handouts:** [NotebookLM Guide](../handouts/notebooklm-for-students.html) | [Style Mirror](https://stylemirror.eduserver.au/) (write in your own voice)
+- **Datasets:** [Fermentation](../datasets/fermentation-dataset.csv) | [Shelf Life](../datasets/shelf-life-dataset.csv) | [Sensory Panel](../datasets/sensory-panel-dataset.csv) | [Process Optimisation](../datasets/process-optimization-dataset.csv)
+- **Interactive Tools:** [RTCF Prompt Builder](../interactive-tools/prompt_builder_tool.html) | [AI Readiness Quiz](../interactive-tools/ai_readiness_quiz.html)
+- **Gemini:** [gemini.google.com](https://gemini.google.com)
+- **NotebookLM:** [notebooklm.google.com](https://notebooklm.google.com)
+
+## Thank You {.center}
+
+::: {.r-fit-text}
+**Conversation, Not Delegation**
+:::
+
+Your expertise + AI's breadth = amplified thinking
+
+Dr. Michael Borck | Faculty of Science & Engineering

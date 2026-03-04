@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Tools - Food Science AI Workshop</title>
-    <meta name="description" content="Hands-on tools for assessment, workflow practice, and skill development with immediate feedback.">
-    
+    <meta name="description" content="Interactive tools for building RTCF prompts, analysing prompt quality, and assessing AI readiness.">
+
     <style>
         * {
             margin: 0;
@@ -136,7 +136,7 @@
         }
 
         .tool-features li:before {
-            content: "✓ ";
+            content: "\2713 ";
             color: #10b981;
             font-weight: bold;
         }
@@ -229,11 +229,11 @@
             h1 {
                 font-size: 2rem;
             }
-            
+
             .tools-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .workflow-steps {
                 flex-direction: column;
                 align-items: center;
@@ -245,12 +245,12 @@
     <header class="header">
         <div class="container">
             <a href="../" class="back-link">
-                ← Back to Workshop
+                &larr; Back to Workshop
             </a>
-            
-            <h1>🛠️ Interactive Tools</h1>
+
+            <h1>Interactive Tools</h1>
             <p class="subtitle">
-                Hands-on tools for assessment, workflow practice, and skill development with immediate feedback
+                Build better prompts, analyse your technique, and assess your readiness
             </p>
         </div>
     </header>
@@ -258,91 +258,91 @@
     <main class="container">
         <div class="tools-grid">
             <div class="tool-card featured">
-                <h2 class="tool-title">🎯 AI Readiness Assessment</h2>
+                <h2 class="tool-title">RTCF Prompt Builder</h2>
                 <p class="tool-description">
-                    Discover your current AI knowledge level and get personalized recommendations for your learning journey. Takes just 3 minutes!
+                    Build effective AI prompts using the RTCF framework (Role, Task, Context, Format). Includes advanced technique templates for reverse prompting, multi-perspective analysis, and devil's advocate.
                 </p>
-                
+
                 <div class="tool-features">
                     <h4>Features</h4>
                     <ul>
-                        <li>Personalized learning path</li>
+                        <li>RTCF guided prompt building</li>
+                        <li>Advanced technique templates</li>
+                        <li>Copy-to-clipboard for Gemini</li>
+                        <li>Framework reference guide</li>
+                    </ul>
+                </div>
+
+                <a href="./prompt_builder_tool.html" class="tool-button">Build Prompts</a>
+            </div>
+
+            <div class="tool-card">
+                <h2 class="tool-title">RTCF Analyser</h2>
+                <p class="tool-description">
+                    Paste any prompt and get instant feedback on how well it uses the RTCF framework. See which elements are present, partial, or missing, with specific suggestions for improvement.
+                </p>
+
+                <div class="tool-features">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Instant RTCF scoring</li>
+                        <li>Element-by-element feedback</li>
+                        <li>Improvement suggestions</li>
+                        <li>Example prompts to try</li>
+                    </ul>
+                </div>
+
+                <a href="./rtcf_analyser.html" class="tool-button">Analyse Prompts</a>
+            </div>
+
+            <div class="tool-card">
+                <h2 class="tool-title">AI Readiness Quiz</h2>
+                <p class="tool-description">
+                    Assess your current AI knowledge level and get personalised recommendations. Takes about 3 minutes.
+                </p>
+
+                <div class="tool-features">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Personalised learning path</li>
                         <li>Skill gap analysis</li>
                         <li>Tool recommendations</li>
                         <li>Progress tracking</li>
                     </ul>
                 </div>
-                
-                <a href="./ai_readiness_quiz.html" class="tool-button">Start Assessment</a>
-            </div>
 
-            <div class="tool-card">
-                <h2 class="tool-title">🚀 Prompt Builder Tool</h2>
-                <p class="tool-description">
-                    Master the CRAFT framework with guided prompt construction, real-time feedback, and example templates for food science research.
-                </p>
-                
-                <div class="tool-features">
-                    <h4>Features</h4>
-                    <ul>
-                        <li>CRAFT framework guidance</li>
-                        <li>Template library</li>
-                        <li>Real-time validation</li>
-                        <li>Export functionality</li>
-                    </ul>
-                </div>
-                
-                <a href="./prompt_builder_tool.html" class="tool-button">Build Prompts</a>
-            </div>
-
-            <div class="tool-card">
-                <h2 class="tool-title">🔍 CRAFT Analyzer</h2>
-                <p class="tool-description">
-                    Analyze and improve your existing prompts using the CRAFT framework. Get specific suggestions for enhancement and optimization.
-                </p>
-                
-                <div class="tool-features">
-                    <h4>Features</h4>
-                    <ul>
-                        <li>Prompt analysis</li>
-                        <li>CRAFT scoring</li>
-                        <li>Improvement suggestions</li>
-                        <li>Before/after comparison</li>
-                    </ul>
-                </div>
-                
-                <a href="./craft_analyser.html" class="tool-button">Analyze Prompts</a>
+                <a href="./ai_readiness_quiz.html" class="tool-button">Take Quiz</a>
             </div>
         </div>
 
         <div class="workflow-guide">
-            <h3>🎓 Recommended Learning Workflow</h3>
-            <p style="color: #94a3b8; margin-bottom: 20px;">Follow this sequence for optimal learning outcomes</p>
-            
+            <h3>Workshop Workflow</h3>
+            <p style="color: #94a3b8; margin-bottom: 20px;">Use these tools alongside the workshop presentation</p>
+
             <div class="workflow-steps">
                 <div class="workflow-step">
                     <div class="step-number">1</div>
-                    <div class="step-title">Assessment</div>
-                    <div class="step-description">Take the readiness quiz to understand your starting point</div>
+                    <div class="step-title">Learn RTCF</div>
+                    <div class="step-description">Understand Role, Task, Context, Format through the Prompt Builder</div>
                 </div>
-                
+
                 <div class="workflow-step">
                     <div class="step-number">2</div>
-                    <div class="step-title">Learn Fundamentals</div>
-                    <div class="step-description">Study Session 1 presentation and practice with prompt builder</div>
+                    <div class="step-title">Practice Techniques</div>
+                    <div class="step-description">Try reverse prompting, multi-perspective, and devil's advocate templates</div>
                 </div>
-                
+
                 <div class="workflow-step">
                     <div class="step-number">3</div>
-                    <div class="step-title">Hands-on Practice</div>
-                    <div class="step-description">Complete Session 2 and analyze prompts with CRAFT analyzer</div>
+                    <div class="step-title">Analyse & Improve</div>
+                    <div class="step-description">Paste your prompts into the RTCF Analyser for feedback</div>
                 </div>
             </div>
         </div>
 
         <div style="text-align: center; margin: 40px 0;">
             <a href="../datasets/" class="tool-button" style="display: inline-block; width: auto; font-size: 16px; padding: 12px 24px;">
-                📊 Explore Practice Datasets
+                Browse Practice Datasets
             </a>
         </div>
     </main>
