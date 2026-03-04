@@ -102,15 +102,21 @@ The bottleneck is your thinking, not the model.
 
 You don't need a $200/month subscription.
 
-::: {.incremental}
-- **Gemini** (free): 2M token context, multimodal, Deep Research
-- **NotebookLM** (free): grounded in YOUR sources, no hallucination
-- Both handle everything we'll do today
-- The **bottleneck is your thinking**, not the model
+| Tool | Free Limit | Best For |
+|---|---|---|
+| **NotebookLM** | Generous | Source-grounded research, no hallucination |
+| **ChatGPT** | ~10 msgs / 5 hrs | General brainstorming and analysis |
+| **Claude** | ~15 msgs / 5 hrs | Detailed writing and reasoning |
+| **Gemini** | ~5 prompts / day | Google Workspace integration |
+| **Grok** | 10-15 / 2 hrs | Fast reset cycle, frequent use |
+| **Meta AI** | Free, no sign-up | Quick questions, Llama 4 models |
+
+::: {.fragment}
+Spread your prompts across tools. Free tools + good thinking > expensive tools + lazy thinking.
 :::
 
 ::: {.fragment}
-Free tools + good thinking > expensive tools + lazy thinking
+See the [Free AI Tools Guide](../handouts/free-ai-tools.html) for strategies and local options.
 :::
 
 ## Quick Tool Check {.center}
@@ -524,7 +530,7 @@ Ideas for postgraduate researchers:
 1. **Conversation > Delegation** --- think with AI, not through it
 2. **RTCF** --- Role, Task, Context, Format for better prompts
 3. **VET your AI** --- Verify, Explain, Test everything
-4. **Gemini + NotebookLM** = powerful free toolkit
+4. **NotebookLM + free chatbots** = powerful free toolkit
 5. **Your expertise is the secret ingredient**
 :::
 
@@ -541,10 +547,9 @@ Ideas for postgraduate researchers:
 ## Resources
 
 - **This workshop:** [michael-borck.github.io/food-science-ai-workshop](https://michael-borck.github.io/food-science-ai-workshop)
-- **Handouts:** [NotebookLM Guide](../handouts/notebooklm-for-students.html) | [Style Mirror](https://stylemirror.eduserver.au/) (write in your own voice)
+- **Handouts:** [Free AI Tools Guide](../handouts/free-ai-tools.html) | [NotebookLM Guide](../handouts/notebooklm-for-students.html) | [Style Mirror](https://stylemirror.eduserver.au/) (write in your own voice)
 - **Datasets:** [Fermentation](../datasets/fermentation-dataset.csv) | [Shelf Life](../datasets/shelf-life-dataset.csv) | [Sensory Panel](../datasets/sensory-panel-dataset.csv) | [Process Optimisation](../datasets/process-optimization-dataset.csv)
 - **Interactive Tools:** [RTCF Prompt Builder](../interactive-tools/prompt_builder_tool.html) | [AI Readiness Quiz](../interactive-tools/ai_readiness_quiz.html)
-- **Gemini:** [gemini.google.com](https://gemini.google.com)
 - **NotebookLM:** [notebooklm.google.com](https://notebooklm.google.com)
 
 ## Thank You {.center}

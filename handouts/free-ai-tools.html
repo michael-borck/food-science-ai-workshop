@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free AI Tools Guide - Food Science AI Workshop</title>
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #16213e;
+            --accent: #3b82f6;
+            --accent2: #8b5cf6;
+            --light: #f0f4ff;
+            --text: #e2e8f0;
+            --text-dark: #2d3748;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --white: #ffffff;
+            --green: #10b981;
+            --green-light: #064e3b;
+            --orange: #f59e0b;
+            --orange-light: #78350f;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.25rem;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .updated {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--accent2);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background: var(--secondary);
+            color: var(--accent);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tr:nth-child(even) {
+            background: rgba(59, 130, 246, 0.05);
+        }
+
+        .tool-name {
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .tool-url {
+            font-size: 0.85rem;
+            color: var(--accent);
+        }
+
+        .highlight-row {
+            background: rgba(16, 185, 129, 0.1) !important;
+        }
+
+        .tip-box {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1rem 0;
+        }
+
+        .tip-box h4 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .strategy-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--green);
+            padding: 1rem 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1rem 0;
+        }
+
+        .strategy-box h4 {
+            color: var(--green);
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--orange);
+            padding: 1rem 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1rem 0;
+        }
+
+        .warning-box h4 {
+            color: var(--orange);
+            margin-bottom: 0.5rem;
+        }
+
+        ul, ol {
+            margin: 0.5rem 0 1rem 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.35rem;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .col-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .col-box h4 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .sources {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .sources h3 {
+            font-size: 1rem;
+        }
+
+        .sources a {
+            color: var(--accent);
+        }
+
+        .sources ul {
+            margin-left: 1.25rem;
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        a { color: var(--accent); }
+
+        @media print {
+            body {
+                background: white;
+                color: #2d3748;
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+            header h1 {
+                background: none;
+                -webkit-text-fill-color: #1a1a2e;
+                color: #1a1a2e;
+            }
+            h2 { color: #1a1a2e; }
+            h3 { color: #4a5568; }
+            th { background: #2d3748; color: white; }
+            td { color: #2d3748; }
+            .tool-name { color: #2d3748; }
+            .tool-url { color: #3182ce; }
+            .tip-box, .strategy-box, .warning-box, .col-box {
+                break-inside: avoid;
+                border-color: #cbd5e0;
+            }
+            .tip-box { background: #ebf8ff; }
+            .strategy-box { background: #f0fff4; }
+            .warning-box { background: #fffbeb; }
+            .col-box { background: #f7fafc; }
+            .tip-box h4 { color: #2c5282; }
+            .strategy-box h4 { color: #276749; }
+            .warning-box h4 { color: #c05621; }
+            .col-box h4 { color: #2d3748; }
+            tr:nth-child(even) { background: #f7fafc; }
+            .highlight-row { background: #f0fff4 !important; }
+            a { color: #2d3748; text-decoration: none; }
+        }
+
+        @media (max-width: 600px) {
+            .two-col { grid-template-columns: 1fr; }
+            body { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Free AI Tools for Researchers</h1>
+        <p>Food Science AI Workshop - Companion Handout</p>
+        <p class="updated">Updated March 2026 - Free tier limits change frequently, check tool websites for current details.</p>
+    </header>
+
+    <h2>Free AI Chatbot Comparison</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tool</th>
+                <th>Free Limit</th>
+                <th>Best For</th>
+                <th>Access</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight-row">
+                <td class="tool-name">NotebookLM</td>
+                <td>Generous (free)</td>
+                <td>Literature review, source-grounded research, no hallucination</td>
+                <td class="tool-url">notebooklm.google.com</td>
+            </tr>
+            <tr>
+                <td class="tool-name">ChatGPT</td>
+                <td>~10 messages per 5 hours</td>
+                <td>General brainstorming, data interpretation, writing</td>
+                <td class="tool-url">chatgpt.com</td>
+            </tr>
+            <tr>
+                <td class="tool-name">Claude</td>
+                <td>~15 messages per 5 hours</td>
+                <td>Detailed writing, reasoning, long documents</td>
+                <td class="tool-url">claude.ai</td>
+            </tr>
+            <tr>
+                <td class="tool-name">Gemini</td>
+                <td>~5 prompts per day</td>
+                <td>Google Workspace integration, multimodal analysis</td>
+                <td class="tool-url">gemini.google.com</td>
+            </tr>
+            <tr>
+                <td class="tool-name">Grok</td>
+                <td>10-15 per 2-hour cycle</td>
+                <td>Frequent use (fastest reset), current events</td>
+                <td class="tool-url">grok.com</td>
+            </tr>
+            <tr>
+                <td class="tool-name">Meta AI</td>
+                <td>Free, no sign-up</td>
+                <td>Quick questions, accessible (Llama 4 models)</td>
+                <td class="tool-url">meta.ai</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="warning-box">
+        <h4>Free limits change frequently</h4>
+        <p>These limits are approximate as of March 2026. Providers adjust them regularly. When you hit a limit on one tool, switch to another.</p>
+    </div>
+
+    <h2>Strategies for Maximising Free Tiers</h2>
+
+    <div class="strategy-box">
+        <h4>1. Spread your prompts across tools</h4>
+        <p>Don't rely on a single tool. By rotating between ChatGPT, Claude, Gemini, Grok, and Meta AI, you effectively get dozens of free prompts per day rather than being stuck with one tool's limit.</p>
+    </div>
+
+    <div class="strategy-box">
+        <h4>2. Make every prompt count</h4>
+        <p>Use the RTCF framework (Role, Task, Context, Format) to write specific, detailed prompts. One well-crafted prompt is worth more than five vague ones. For example: "You are an experienced food scientist specialising in fermentation. Analyse the pH trends in my oat milk data across 4 treatments over 48 hours. Present key findings in a table."</p>
+    </div>
+
+    <div class="strategy-box">
+        <h4>3. Use NotebookLM as your workhorse</h4>
+        <p>For literature review and research synthesis, NotebookLM is your best tool. Upload your papers, methods articles, and supervisor feedback. It answers from YOUR sources only - no hallucination, generous limits, and it can generate audio overviews for reviewing on your commute.</p>
+    </div>
+
+    <div class="strategy-box">
+        <h4>4. Plan before you prompt</h4>
+        <p>Before opening an AI tool, write down what you actually need. Draft your prompt in a text editor first. This saves wasted prompts on poorly worded requests and helps you think through what you're really asking.</p>
+    </div>
+
+    <h2>Local AI - Unlimited and Private</h2>
+
+    <p>If you want unlimited AI access with complete privacy (nothing leaves your laptop), you can run AI models locally. This is especially useful for working with sensitive research data.</p>
+
+    <div class="two-col">
+        <div class="col-box">
+            <h4>Msty</h4>
+            <p>Desktop app with a friendly interface. Runs Llama, Mistral, and other models locally. Can also connect to cloud APIs. Good for beginners.</p>
+            <p class="tool-url" style="margin-top: 0.5rem;">msty.app</p>
+        </div>
+        <div class="col-box">
+            <h4>Ollama</h4>
+            <p>Command-line tool for running models locally. More technical but very powerful. Download models with a single command. Pairs well with Msty as a backend.</p>
+            <p class="tool-url" style="margin-top: 0.5rem;">ollama.com</p>
+        </div>
+    </div>
+
+    <div class="tip-box">
+        <h4>What do you need to run local AI?</h4>
+        <p>A laptop with at least 8GB of RAM can run smaller models (7-8 billion parameters). For better quality, 16GB+ RAM is recommended. Both Msty and Ollama work on Mac, Windows, and Linux. No internet connection required once the model is downloaded.</p>
+    </div>
+
+    <h2>Recommended Research Workflow</h2>
+
+    <ol>
+        <li><strong>Start with NotebookLM</strong> - upload your papers and do source-grounded literature synthesis</li>
+        <li><strong>Use a chatbot for analysis</strong> - upload data, ask "what patterns do you see?", iterate with follow-up questions</li>
+        <li><strong>Rotate tools when you hit limits</strong> - switch from ChatGPT to Claude to Grok as needed</li>
+        <li><strong>VET everything</strong> - Verify, Explain, Test before using any AI output in your research</li>
+        <li><strong>Consider local AI</strong> - if you need unlimited access or work with sensitive research data</li>
+    </ol>
+
+    <div class="tip-box">
+        <h4>For Data Analysis</h4>
+        <p>Upload your CSV files to any chatbot. Start with "What patterns do you see?" then dig deeper with targeted questions. The conversation guides the analysis. Export results to Google Sheets (data), Google Docs (write-up), or Google Slides (figures).</p>
+    </div>
+
+    <h2>Other Useful Free Tools</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tool</th>
+                <th>What It Does</th>
+                <th>Access</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tool-name">Style Mirror</td>
+                <td>Helps AI write in your voice. Upload a writing sample, get a reusable style prompt.</td>
+                <td class="tool-url">stylemirror.eduserver.au</td>
+            </tr>
+            <tr>
+                <td class="tool-name">Google Docs/Sheets</td>
+                <td>Export AI-generated content for editing. Gemini integrates directly.</td>
+                <td class="tool-url">docs.google.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="sources">
+        <h3>Sources</h3>
+        <ul>
+            <li><a href="https://support.google.com/gemini/answer/16275805?hl=en">Gemini Apps limits and upgrades</a> - Google Support</li>
+            <li><a href="https://exploreaitogether.com/llm-usage-limits-comparison/">LLM Usage Limits 2026: ChatGPT vs Claude vs Gemini</a> - Explore AI Together</li>
+            <li><a href="https://www.sentisight.ai/ai-price-comparison-gemini-chatgpt-claude-grok/">2026 AI Subscription Prices: Gemini vs ChatGPT vs Claude</a> - SentiSight</li>
+            <li><a href="https://techcrunch.com/2025/04/05/meta-releases-llama-4-a-new-crop-of-flagship-ai-models/">Meta releases Llama 4</a> - TechCrunch</li>
+            <li><a href="https://aiseohubtech.com/msty-ai-guide-2026-ultimate-local-llm-interface/">Msty AI Guide 2026</a> - AI SEO Hub</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Food Science AI Workshop | Dr. Michael Borck | Faculty of Science & Engineering | March 2026</p>
+    </footer>
+</body>
+</html>
