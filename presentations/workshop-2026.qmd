@@ -53,6 +53,16 @@ AI is **confident even when wrong**.
 **The issue wasn't using AI. It was trusting AI without verifying.**
 :::
 
+## Quick Poll: Where Are You With AI? {.center}
+
+Scan the QR code and answer one question.
+
+![](images/ai-poll-qr.png){width=400}
+
+::: {.notes}
+Show the MS Form results live after 30-60 seconds. Use this to gauge the room and transition: "Whether you're a newcomer or a power user, what happened to Deloitte can happen to anyone who skips verification. So let's talk about the right mindset..."
+:::
+
 ## The Real Problem
 
 :::: {.columns}
