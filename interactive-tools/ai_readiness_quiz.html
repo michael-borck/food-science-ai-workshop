@@ -345,13 +345,13 @@
     <div class="container">
         <div class="header">
             <h1>🎯 AI Readiness Assessment</h1>
-            <p class="subtitle">Discover your AI experience level and get personalized learning recommendations</p>
+            <p class="subtitle">Discover your AI experience level and get personalised learning recommendations</p>
         </div>
 
         <!-- Quiz Introduction -->
         <div class="quiz-intro" id="quiz-intro">
             <p class="intro-text">
-                This quick assessment will help you understand your current AI experience level and provide personalized recommendations for getting the most out of our research workflow tools.
+                This quick assessment will help you understand your current AI experience level and provide personalised recommendations for getting the most out of the workshop.
             </p>
             <p class="intro-text">
                 <strong>Takes about 3-4 minutes • No right or wrong answers • Your results are private</strong>
@@ -406,8 +406,8 @@
                     { text: "I don't use them yet", value: 0 },
                     { text: "Simple questions - like definitions or basic explanations", value: 1 },
                     { text: "Help with writing - emails, summaries, or editing", value: 2 },
-                    { text: "Problem-solving - research help, analysis, or planning", value: 3 },
-                    { text: "Complex tasks - data analysis, code, detailed projects", value: 4 }
+                    { text: "Problem-solving - research help, data interpretation, or planning", value: 3 },
+                    { text: "Complex tasks - data analysis, literature synthesis, experimental design", value: 4 }
                 ]
             },
             {
@@ -449,7 +449,7 @@
                 options: [
                     { text: "I haven't thought about using AI for research", value: 0 },
                     { text: "Maybe for basic research questions or definitions", value: 1 },
-                    { text: "Help with literature searches or summarizing papers", value: 2 },
+                    { text: "Help with literature searches or summarising papers", value: 2 },
                     { text: "Assistance with methodology design or data interpretation", value: 3 },
                     { text: "Integrated into my entire research workflow", value: 4 }
                 ]
@@ -574,89 +574,89 @@
             const recommendations = {
                 beginner: {
                     title: "AI Newcomer",
-                    description: "You're just getting started with AI tools - perfect! You have a great opportunity to build effective habits from the beginning.",
+                    description: "You're just getting started with AI tools - that's great! This workshop will give you practical techniques you can use straight away.",
                     cards: [
                         {
-                            title: "🎯 Start Here",
-                            content: "Focus on the CRAFT Framework tab in our Research Starter tool. This will teach you how to write effective prompts from day one."
+                            title: "Start Here",
+                            content: "Learn the RTCF Framework (Role, Task, Context, Format) during the workshop. It gives you a simple structure for writing effective prompts from day one."
                         },
                         {
-                            title: "🚀 First Steps",
-                            content: "Try Step 1 of the Research Starter with a topic you're curious about. Don't worry about being perfect - just practice asking clear questions."
+                            title: "First Steps",
+                            content: "Try NotebookLM first - upload a paper you're reading and ask it questions. It only answers from your sources, so there's no risk of hallucinated information."
                         },
                         {
-                            title: "📚 Essential Reading",
-                            content: "Spend time in the 'Prompting as Conversation' section of our resources. Learn to think of AI as a collaborator, not a magic tool."
+                            title: "Free Tools",
+                            content: "You don't need paid subscriptions. Use ChatGPT, Claude, Gemini, Grok, and Meta AI - spread your prompts across free tiers. See the Free AI Tools Guide on the workshop site."
                         },
                         {
-                            title: "⚠️ Important",
-                            content: "Always verify AI responses, especially for research. Start building good verification habits now - they'll serve you well as you advance."
+                            title: "Build Good Habits",
+                            content: "Always VET your AI outputs: Verify (can I find this independently?), Explain (can I say this in my own words?), Test (does this hold up under scrutiny?)."
                         }
                     ]
                 },
                 intermediate: {
                     title: "AI Explorer",
-                    description: "You've experimented with AI tools and have some experience. Now it's time to develop more systematic approaches.",
+                    description: "You've experimented with AI tools and have some experience. This workshop will help you move from basic use to conversational, strategic thinking with AI.",
                     cards: [
                         {
-                            title: "🎯 Perfect for You",
-                            content: "Use the complete 3-step Research Starter workflow. You have enough AI experience to benefit from the structured approach."
+                            title: "Level Up Your Prompts",
+                            content: "Use the RTCF Framework to structure your prompts. Try the RTCF Prompt Builder and Analyser tools on the workshop site to practise."
                         },
                         {
-                            title: "🚀 Level Up",
-                            content: "Focus on prompt chaining and iterative refinement. Practice the 'conversation' approach rather than one-shot prompting."
+                            title: "Try Reverse Prompting",
+                            content: "Instead of asking AI for answers, let it interview YOU first. Say: 'Before giving advice, interview me to understand my research context.' This produces much better results."
                         },
                         {
-                            title: "📚 Skill Building",
-                            content: "Study the 'Role-Based Prompting' and 'Iterative Refinement' sections. These will significantly improve your results."
+                            title: "Conversation, Not Delegation",
+                            content: "Move beyond single prompts. Have a conversation: ask follow-up questions, challenge responses, dig deeper. The conversation guides the analysis."
                         },
                         {
-                            title: "⚡ Challenge",
-                            content: "Try using multiple AI tools for the same task and compare results. This will help you understand different AI capabilities."
+                            title: "Compare Tools",
+                            content: "Try the same prompt across ChatGPT, Claude, and Gemini. You'll learn each tool's strengths and stretch your free tier limits at the same time."
                         }
                     ]
                 },
                 advanced: {
                     title: "AI Practitioner",
-                    description: "You're comfortable with AI tools and use them regularly. You're ready for sophisticated techniques and strategic implementation.",
+                    description: "You're comfortable with AI tools and use them regularly. Focus on the critical evaluation techniques and integrating AI into your full research workflow.",
                     cards: [
                         {
-                            title: "🎯 Advanced Techniques",
-                            content: "Experiment with the complex prompting patterns in our resources section. Try debate techniques and multi-step reasoning."
+                            title: "Advanced Techniques",
+                            content: "Try multi-perspective analysis (get food scientist, statistician, industry partner, and ethics reviewer perspectives in one prompt) and devil's advocate to stress-test your hypotheses."
                         },
                         {
-                            title: "🚀 Research Integration",
-                            content: "Use our tools to build your own research methodology. Consider how AI fits into your entire workflow, not just individual tasks."
+                            title: "Research Workflow",
+                            content: "Build a complete workflow: NotebookLM for literature synthesis, chatbots for data analysis and brainstorming, Style Mirror for writing in your own voice."
                         },
                         {
-                            title: "📚 Deep Dive",
-                            content: "Focus on the limitations and critical evaluation aspects. Your role is to push AI tools to their limits while understanding boundaries."
+                            title: "VET Everything",
+                            content: "At your level, the biggest risk is over-trusting AI. Apply the VET framework rigorously: Verify sources, Explain in your own words, Test under scrutiny."
                         },
                         {
-                            title: "👥 Mentor Others",
-                            content: "Share your experience with classmates. Teaching others will deepen your own understanding and reveal new approaches."
+                            title: "Local AI Options",
+                            content: "Consider Msty or Ollama for unlimited, private AI access on your laptop. Useful for sensitive research data or when you need more prompts than free tiers allow."
                         }
                     ]
                 },
                 expert: {
                     title: "AI Power User",
-                    description: "You're already using AI effectively and understand its capabilities and limitations. You're ready to push boundaries and innovate.",
+                    description: "You're already using AI effectively. This workshop will refine your approach and introduce frameworks for teaching others.",
                     cards: [
                         {
-                            title: "🎯 Innovation Focus",
-                            content: "Use our resources as a foundation to develop novel approaches. Consider creating your own prompt libraries and methodologies."
+                            title: "Sharpen Your Edge",
+                            content: "Focus on the VET framework and devil's advocate techniques. Even experienced users can fall into the trap of trusting AI outputs too readily."
                         },
                         {
-                            title: "🚀 Research Leadership",
-                            content: "Integrate AI strategically into complex research projects. Focus on workflow optimization and quality assurance processes."
+                            title: "Workflow Optimisation",
+                            content: "Integrate NotebookLM for source-grounded work, rotate free chatbot tiers strategically, and use local models (Msty/Ollama) for unlimited private access."
                         },
                         {
-                            title: "📚 Advanced Patterns",
-                            content: "Explore the most sophisticated techniques in our resources. Experiment with cross-tool workflows and systematic prompt engineering."
+                            title: "Help Others",
+                            content: "Share your experience with fellow researchers during the workshop activities. Teaching others deepens your own understanding and reveals new approaches."
                         },
                         {
-                            title: "🏆 Community Contribution",
-                            content: "Share your innovations with the research community. Consider contributing to prompt libraries and best practices documentation."
+                            title: "Stay Critical",
+                            content: "Remember: conversation, not delegation. Your expertise is the secret ingredient. AI amplifies your thinking - it doesn't replace it."
                         }
                     ]
                 }
