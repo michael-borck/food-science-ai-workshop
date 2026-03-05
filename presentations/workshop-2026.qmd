@@ -55,9 +55,11 @@ AI is **confident even when wrong**.
 
 ## Quick Poll: Where Are You With AI? {.center}
 
-Scan the QR code and answer one question.
+Scan the QR code or visit the link below.
 
 ![](images/ai-poll-qr.png){width=400}
+
+[forms.cloud.microsoft/r/4BmAZXG3N5](https://forms.cloud.microsoft/r/4BmAZXG3N5)
 
 ::: {.notes}
 Show the MS Form results live after 30-60 seconds. Use this to gauge the room and transition: "Whether you're a newcomer or a power user, what happened to Deloitte can happen to anyone who skips verification. So let's talk about the right mindset..."
