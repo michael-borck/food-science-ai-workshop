@@ -53,6 +53,58 @@ AI is **confident even when wrong**.
 **The issue wasn't using AI. It was trusting AI without verifying.**
 :::
 
+## The Trust Tool {.center}
+
+Before you use any AI output, place the task on this grid.
+
+::: {.r-fit-text}
+**Average vs. Precise** × **Small vs. Large Consequences**
+:::
+
+## The Trust Tool: Where Does This Task Sit?
+
+:::: {.columns}
+::: {.column width="50%"}
+### 🟢 Green — Trust with Light Review
+**Average is fine + Small consequences**
+- Brainstorming titles
+- Draft emails and summaries
+- First-pass language polish
+
+### 🟡 Yellow — Verify Before You Ship
+**Must be precise + Small consequences**
+- Citations, calculations, facts you'll quote
+- pH values, statistical numbers
+:::
+
+::: {.column width="50%"}
+### 🟡 Yellow — Trust, But Verify Load-Bearing Bits
+**Average is fine + Large consequences**
+- Strategic memo framing
+- Research direction decisions
+
+### 🔴 Red — Human-in-the-Loop
+**Precise + Large consequences**
+- Safety claims (shelf life, allergens, HACCP)
+- Regulatory submissions
+- Anything touching money, safety, or people
+:::
+::::
+
+::: {.fragment .highlight-red}
+**Most AI failures in the news are someone treating a 🔴 task as 🟢.**
+:::
+
+## Trust Is About the Task, Not the Tool
+
+A frontier model and a free chatbot can both produce green brilliance and red garbage.
+
+::: {.incremental}
+- Better models earn trust on *more* tasks
+- They **never** earn trust by default
+- Your obligation is to place every output on the grid
+:::
+
 ## Quick Poll: Where Are You With AI? {.center}
 
 Scan the QR code or visit the link below.
@@ -110,18 +162,47 @@ Your **expertise** + AI's **breadth** = **amplified thinking**
 The bottleneck is your thinking, not the model.
 :::
 
+## AI + Human Edge {.center}
+
+What each side does best in food science research:
+
+:::: {.columns}
+::: {.column width="50%"}
+### The Human Edge
+- Sensory nuance (taste, mouthfeel, aroma)
+- Tacit lab knowledge ("the gel looks off")
+- Safety & ethical judgment
+- Regulatory & cultural context
+- Accountability & long-term ownership
+:::
+
+::: {.column width="50%"}
+### The AI Edge
+- Pattern detection in large datasets
+- Rapid cross-domain literature scanning
+- Drafting, formatting, ideation at speed
+- Statistical exploration & visualization
+- 24/7 availability, no fatigue
+:::
+::::
+
+::: {.fragment}
+**The edge is not choosing one or the other — it is knowing who does what, and staying in the loop.**
+:::
+
 ## Why Frontier Models Aren't Necessary
 
 You don't need a $200/month subscription.
 
 | Tool | Free Limit | Best For |
 |---|---|---|
-| **NotebookLM** | Generous | Source-grounded research, no hallucination |
+| **Gemini Notebook** | Generous | Source-grounded research, no hallucination |
 | **ChatGPT** | ~10 msgs / 5 hrs | General brainstorming and analysis |
 | **Claude** | ~15 msgs / 5 hrs | Detailed writing and reasoning |
-| **Gemini** | ~5 prompts / day | Google Workspace integration |
+| **Gemini** | 100+ Flash prompts / day | Workspace integration, reasoning models |
 | **Grok** | 10-15 / 2 hrs | Fast reset cycle, frequent use |
 | **Meta AI** | Free, no sign-up | Quick questions, Llama 4 models |
+| **Msty** | Unlimited (local) | Private, offline AI on your laptop |
 
 ::: {.fragment}
 Spread your prompts across tools. Free tools + good thinking > expensive tools + lazy thinking.
@@ -139,7 +220,7 @@ Before we continue:
 1. Open [gemini.google.com](https://gemini.google.com) in your browser
 2. Sign in with your Google account
 3. You should see the Gemini chat interface
-4. Open [notebooklm.google.com](https://notebooklm.google.com) in another tab
+4. Open [notebooklm.google.com](https://notebooklm.google.com) in another tab (Gemini Notebook)
 :::
 
 ::: {.fragment}
@@ -449,6 +530,21 @@ Ask Gemini to help you create deliverables:
 Export to: Google Sheets (data), Google Docs (write-up), Google Slides (figures)
 :::
 
+## Bonus: Multimodal Analysis {.center}
+
+Gemini and ChatGPT can also read **images**.
+
+::: {.incremental}
+- Upload a chromatogram, gel image, or spectroscopy plot
+- Ask: "What patterns do you see in this image?"
+- Compare sensory scoring sheets or plate photos
+- Extract data from handwritten lab notebooks
+:::
+
+::: {.fragment}
+For food science, this means faster interpretation of lab visuals — but **VET every number** it reports.
+:::
+
 ## Activity: Analyse Your Data (15 min) {.center}
 
 ::: {.callout-tip}
@@ -462,15 +558,17 @@ Export to: Google Sheets (data), Google Docs (write-up), Google Slides (figures)
 
 Remember: the conversation guided the analysis, not a single prompt.
 
-# Part 5: NotebookLM for Literature & Synthesis {background-color="#1a1a2e"}
+# Part 5: Gemini Notebook for Literature & Synthesis {background-color="#1a1a2e"}
 
-## What is NotebookLM? {.center}
+## What is Gemini Notebook? {.center}
 
 AI that is **constrained to your curated sources**.
 
 No hallucination. No made-up citations. Just your papers.
 
-## NotebookLM: Key Features
+(Formerly NotebookLM — Google renamed it to Gemini Notebook.)
+
+## Gemini Notebook: Key Features
 
 ::: {.incremental}
 - Upload PDFs, Google Docs, websites, YouTube videos
@@ -487,7 +585,7 @@ Think of it as: AI that has read your papers and **only** your papers.
 ## Demo: Literature Synthesis
 
 ::: {.callout-note}
-## In NotebookLM
+## In Gemini Notebook
 1. Go to [notebooklm.google.com](https://notebooklm.google.com)
 2. Create a new notebook
 3. Upload 3-5 papers on your research topic
@@ -498,7 +596,7 @@ Think of it as: AI that has read your papers and **only** your papers.
    - Click **"Generate Audio Overview"** for a podcast summary
 :::
 
-## Why NotebookLM is Powerful
+## Why Gemini Notebook is Powerful
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -510,7 +608,7 @@ Think of it as: AI that has read your papers and **only** your papers.
 :::
 
 ::: {.column width="50%"}
-### NotebookLM
+### Gemini Notebook
 - Grounded in YOUR uploads
 - Citations trace to your docs
 - No external information
@@ -519,10 +617,10 @@ Think of it as: AI that has read your papers and **only** your papers.
 ::::
 
 ::: {.fragment}
-Use **Gemini** for broad exploration. Use **NotebookLM** for deep, source-grounded work.
+Use **Gemini** for broad exploration. Use **Gemini Notebook** for deep, source-grounded work.
 :::
 
-## NotebookLM for Your Research
+## Gemini Notebook for Your Research
 
 Ideas for postgraduate researchers:
 
@@ -540,16 +638,18 @@ Ideas for postgraduate researchers:
 
 ::: {.incremental}
 1. **Conversation > Delegation** --- think with AI, not through it
-2. **RTCF** --- Role, Task, Context, Format for better prompts
-3. **VET your AI** --- Verify, Explain, Test everything
-4. **NotebookLM + free chatbots** = powerful free toolkit
-5. **Your expertise is the secret ingredient**
+2. **Trust Tool** --- place every output on the grid before acting
+3. **RTCF** --- Role, Task, Context, Format for better prompts
+4. **VET your AI** --- Verify, Explain, Test everything
+5. **Gemini Notebook + free chatbots** = powerful free toolkit
+6. **Your expertise is the secret ingredient** (the human edge)
 :::
 
 ## Your AI Conversation Toolkit
 
 | Technique | When to Use | Key Phrase |
 |---|---|---|
+| Trust Tool | Before starting any task | "Where does this sit on the grid?" |
 | RTCF Framework | Starting any AI conversation | "You are... I need you to..." |
 | Reverse Prompting | Exploring a new problem | "Interview me first" |
 | Multi-Perspective | Evaluating ideas or plans | "Act as my advisory panel" |
@@ -559,10 +659,10 @@ Ideas for postgraduate researchers:
 ## Resources
 
 - **This workshop:** [michael-borck.github.io/food-science-ai-workshop](https://michael-borck.github.io/food-science-ai-workshop)
-- **Handouts:** [Free AI Tools Guide](../handouts/free-ai-tools.html) | [NotebookLM Guide](../handouts/notebooklm-for-students.html) | [Style Mirror](https://stylemirror.eduserver.au/) (write in your own voice)
+- **Handouts:** [Free AI Tools Guide](../handouts/free-ai-tools.html) | [Gemini Notebook Guide](../handouts/notebooklm-for-students.html) | [Style Mirror](https://stylemirror.eduserver.au/) (write in your own voice)
 - **Datasets:** [Fermentation](../datasets/fermentation-dataset.csv) | [Shelf Life](../datasets/shelf-life-dataset.csv) | [Sensory Panel](../datasets/sensory-panel-dataset.csv) | [Process Optimisation](../datasets/process-optimization-dataset.csv)
 - **Interactive Tools:** [RTCF Prompt Builder](../interactive-tools/prompt_builder_tool.html) | [AI Readiness Quiz](../interactive-tools/ai_readiness_quiz.html)
-- **NotebookLM:** [notebooklm.google.com](https://notebooklm.google.com)
+- **Gemini Notebook:** [notebooklm.google.com](https://notebooklm.google.com)
 
 ## Thank You {.center}
 
