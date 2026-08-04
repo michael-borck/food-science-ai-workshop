@@ -2,7 +2,6 @@
 title: "Conversation, Not Delegation"
 subtitle: "Using AI to Amplify Your Food Science Research"
 author: "Dr. Michael Borck"
-date: "7 March 2026"
 format:
   revealjs:
     theme: dark
@@ -114,7 +113,7 @@ Scan the QR code or visit the link below.
 [forms.cloud.microsoft/r/4BmAZXG3N5](https://forms.cloud.microsoft/r/4BmAZXG3N5)
 
 ::: {.notes}
-Show the MS Form results live after 30-60 seconds. Use this to gauge the room and transition: "Whether you're a newcomer or a power user, what happened to Deloitte can happen to anyone who skips verification. So let's talk about the right mindset..."
+Show the MS Form results live after 30-60 seconds. Use this to gauge the room and transition: "Wherever you sit on this spectrum, the grid applies the same --- newcomers and power users both get burned when they treat a red task as green. So the real question isn't how much you use AI, it's how you use it. Let's talk about that mindset..."
 :::
 
 ## The Real Problem
@@ -197,6 +196,7 @@ You don't need a $200/month subscription.
 | Tool | Free Limit | Best For |
 |---|---|---|
 | **Gemini Notebook** | Generous | Source-grounded research, no hallucination |
+| **Curtin AI Chat** | Free for staff & students | Curtin's own portal --- private, no commercial limits |
 | **ChatGPT** | ~10 msgs / 5 hrs | General brainstorming and analysis |
 | **Claude** | ~15 msgs / 5 hrs | Detailed writing and reasoning |
 | **Gemini** | 100+ Flash prompts / day | Workspace integration, reasoning models |
@@ -460,6 +460,22 @@ Stretch, grab a coffee, check your messages.
 
 Back in 10 minutes for hands-on data analysis.
 
+## Warm-Up: The Trust Tool Game {.center}
+
+Let's test the grid before we trust it with real data.
+
+[michael-borck.github.io/trust-tool](https://michael-borck.github.io/trust-tool/?domain=food-science)
+
+::: {.incremental}
+- We'll place 2-3 scenarios together on screen --- vote before the card drops
+- Only first attempts score, so argue your case
+- Finish the rest (and try the other 15 domains) after the workshop
+:::
+
+::: {.notes}
+Re-energiser straight after the break (~5 min). Open the Food Science pack on screen, read a scenario aloud, get a show-of-hands vote per quadrant, then drag the card where the majority says. Tap the tick or cross for the explanation --- the wrong answers are the teaching moments. Do 2-3 scenarios max, then hand over the link. This re-anchors Part 1's grid right before the hands-on data work.
+:::
+
 # Part 4: Data Analysis with Gemini {background-color="#1a1a2e"}
 
 ## The Power of Conversational Analysis {.center}
@@ -661,7 +677,7 @@ Ideas for postgraduate researchers:
 - **This workshop:** [michael-borck.github.io/food-science-ai-workshop](https://michael-borck.github.io/food-science-ai-workshop)
 - **Handouts:** [Free AI Tools Guide](../handouts/free-ai-tools.html) | [Gemini Notebook Guide](../handouts/notebooklm-for-students.html) | [Style Mirror](https://stylemirror.eduserver.au/) (write in your own voice)
 - **Datasets:** [Fermentation](../datasets/fermentation-dataset.csv) | [Shelf Life](../datasets/shelf-life-dataset.csv) | [Sensory Panel](../datasets/sensory-panel-dataset.csv) | [Process Optimisation](../datasets/process-optimization-dataset.csv)
-- **Interactive Tools:** [RTCF Prompt Builder](../interactive-tools/prompt_builder_tool.html) | [AI Readiness Quiz](../interactive-tools/ai_readiness_quiz.html)
+- **Interactive Tools:** [Trust Tool Game](https://michael-borck.github.io/trust-tool/?domain=food-science) | [RTCF Prompt Builder](../interactive-tools/prompt_builder_tool.html) | [RTCF Analyser](../interactive-tools/rtcf_analyser.html) | [AI Readiness Quiz](../interactive-tools/ai_readiness_quiz.html)
 - **Gemini Notebook:** [notebooklm.google.com](https://notebooklm.google.com)
 
 ## Thank You {.center}
